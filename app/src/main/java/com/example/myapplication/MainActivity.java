@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
     private void requestPermissionWithRationale() {
         new AlertDialog.Builder(this)
                 .setTitle("Permission needed")
-                .setMessage("This permission is needed to become a lab")
+                .setMessage("This permission is needed for a lab")
                 .setPositiveButton("ok", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
@@ -80,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
                 })
                 .create().show();
     }
+
 
     private void requestPermission() {
         ActivityCompat.requestPermissions(this,
